@@ -12,10 +12,10 @@ with open("./words.csv", "a+") as file:
 			break
 
 		elif blank_words[0] == "1_" and len(blank_words) == 8:
-			file.write(f"{blank_words[1]}|{blank_words[2]}|{blank_words[3]}|{blank_words[4]}|{blank_words[5]}|{blank_words[6]}|{blank_words[7]}\n")
+			file.write(f"{blank_words[1]}|{blank_words[2]}|{blank_words[3]}|{blank_words[5]}|{blank_words[6]}|{blank_words[7]}|{blank_words[4]}\n")
 			
 		elif blank_words[0] == "2_" and len(blank_words) == 5:
-			file.write(f"{blank_words[1]}|{blank_words[2]}|{blank_words[3]}|{blank_words[4]}|{href_google}|{href_name}|{href_alt}\n")
+			file.write(f"{blank_words[1]}|{blank_words[2]}|{blank_words[3]}|{href_google}|{href_name}|{href_alt}|{blank_words[4]}\n")
 			
 		else:
 			print("Рядок має бути коректним, маючи роздільник: ', ' або 'q' для виходу")
